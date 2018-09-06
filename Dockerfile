@@ -63,7 +63,7 @@ RUN apt-get install -y ros-indigo-gazebo-ros
 WORKDIR /motoman_project_ws
 RUN rosdep install -i --from-paths src
 # compile
-RUN catkin_make
+#RUN catkin_make
 # gazebo
 #CMD [ "roslaunch","motoman_gazebo sia5_empty_world.launch" ]
 #RUN rm /bin/sh && mv /bin/sh_tmp /bin/sh
